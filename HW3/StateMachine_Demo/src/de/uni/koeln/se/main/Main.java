@@ -25,7 +25,4 @@ public class Main {
 		Elevator elv=new  Elevator(dest_floor);
 		elv.startJourney();
 	}
-
-
-
 }
