@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>230</y>
+      <w>160</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_MobileDevice_
+--
+- uid: int
+- os: OperationSystem
+--
+# installApp (appName: String, version: String)
+# uninstallApp (appName: String, version: String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>165</x>
+      <y>230</y>
+      <w>170</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>_Group_
+--
+- GroupID: int
+- Description: String
+- deviceUIDs []: int
+--
+# installGroup (appName: String, version: String)
+# uninstallGroup (appName: String, version: String)
+# assignDevice (uid: int)
+# removeDevice (uid: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>230</y>
+      <w>80</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>OperationSystem
+--
+- os: String
+--
++ getOS (): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>405</x>
+      <y>350</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_InteractiveDevice_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>350</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_HeadlessDevice_
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>435</x>
+      <y>295</y>
+      <w>60</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>295</y>
+      <w>60</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;100.0;60.0;100.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>225</y>
+      <w>85</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2= 0..*
+is assigned to</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>325</y>
+      <w>160</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>_Application_
+--
+- appID: int
+- title: String
+- version: String
+- softwareHouse: String
+- os: OperationSystem
+--
++ startApplication ()
++ stopApplication ()
++ getAppID (): int
++ getAppName (): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>470</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_StandardApplication_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>470</y>
+      <w>70</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_EmbeddedApplication_
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>415</y>
+      <w>60</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>705</x>
+      <y>415</y>
+      <w>60</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;100.0;60.0;100.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>745</x>
+      <y>265</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=0..*
+is for</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>230</y>
+      <w>160</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;300.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>350</y>
+      <w>80</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=0..*
+m2= 0..*
+has</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;250.0;140.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>380</y>
+      <w>190</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=0..*
+m2= 0..*
+has</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0;360.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>380</y>
+      <w>355</w>
+      <h>155</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=0..*
+m2= 0..*
+has</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;290.0;670.0;290.0;670.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>165</x>
+      <y>115</y>
+      <w>105</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_SysAdmin_
+--
+- uid: int
+- name: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>115</y>
+      <w>190</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_Network_
+--
+- deviceIDs []: int
+--
++ connectDevice (uid: int)
++ disconnectDevice (uid: int)
+# installEverywhere (appName:String, version: String)
+# uninstallEverywhere(appName: String, version: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>265</x>
+      <y>110</y>
+      <w>135</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1
+manages</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>150</y>
+      <w>45</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..*
+m2=1
+manages</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>180</y>
+      <w>20</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>255</x>
+      <y>150</y>
+      <w>205</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..*
+m2=1
+manages</panel_attributes>
+    <additional_attributes>370.0;160.0;370.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>110</y>
+      <w>300</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>_Microwave_oven_
+--
++ model: String
++ ownerName: String
++ puchased_price: int
++ mode: String[] = {"Grill", "Defrost", "Heat"}
++ grill: int = 1001
++ defrost: int = 1002
++ heat: int = 1003
++ door_Lock: boolean = false
++ light: boolean = false
++ currentMode: String
+--
++ Microwave_oven ()
++ start (mode: String, duration: int)
++ setMode (mode: int): String
++ stop ()
++ open_Door ()
++ close_Door ()</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
