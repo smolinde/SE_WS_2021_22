@@ -2,7 +2,7 @@ package Task_2;
 
 import java.util.ArrayList;
 
-public class CompositeGender implements OlympicsTeams{
+public class CompositeGender implements OlympicsTeams {
 	private String name;
 	private int numberOfAthletes;
 	private int numberOfGoldMedals;
