@@ -59,7 +59,7 @@ public class Glass implements HouseholdItem{
 
 
 	public double movingCost() {
-		return Math.round(((0.15 * tickness * tickness - 1.25 * tickness + 3.1) * lenght)*100.0) / 100.0;
+		return Math.round(((0.15 * tickness * tickness - 1.25 * tickness + 3.1) * lenght)*100.0) / 10000.0;
 	}
 
 
