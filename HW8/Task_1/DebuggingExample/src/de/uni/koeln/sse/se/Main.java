@@ -4,9 +4,9 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		debuggingExercise1_2();
+		//debuggingExercise1_2();
 		
-		//debuggingExercise3();
+		debuggingExercise3();
 				
 	}
 
